@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Copy Tab URL",
+    "version": "1.0",
+    "description": "Copy the URL of the current (or selected) tabs.",
+    "permissions": [
+        "tabs",
+        "scripting",
+        "clipboardWrite"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Copy Tab URL"
+    },
+    "commands": {
+        "copy-tab-url": {
+            "suggested_key": {
+                "default": "Alt+Shift+C"
+            },
+            "description": "Copy the URL of the current (or selected) tabs"
+        }
+    }
+}
