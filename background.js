@@ -19,6 +19,7 @@ chrome.commands.onCommand.addListener(cmd => {
  */
 function copyUrl(options) {
     chrome.tabs.query({ highlighted: true, currentWindow: true }, tabs => {
+        if (!tabs || tabs.length === 0) { return }
         const urls = tabs.map(tab => formatUrl(tab, options.format)).join('\n')
         chrome.scripting.executeScript({
             target: { tabId: tabs[0].id },
