@@ -30,7 +30,7 @@ async function handleClipboardWrite(data, sendResponse) {
     try {
         // Error if we received the wrong kind of data.
         if (typeof data !== 'string') {
-            return sendResponse({ success: false, error: `Value provided must be a 'string', git '${typeof data}' ` })
+            return sendResponse({ success: false, error: `Value provided must be a 'string', got '${typeof data}'` })
         }
 
         // `document.execCommand('copy')` works against the user's selection in a web
