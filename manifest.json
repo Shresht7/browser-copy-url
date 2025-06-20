@@ -23,6 +23,12 @@
                 "default": "Alt+Shift+C"
             },
             "description": "Copy the URL of the current (or selected) tabs"
+        },
+        "copy-tab-url-md": {
+            "suggested_key": {
+                "default": "Alt+Shift+M"
+            },
+            "description": "Copy the URL of the current (or selected) tabs as markdown links"
         }
     }
 }
