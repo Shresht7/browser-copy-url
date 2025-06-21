@@ -16,7 +16,8 @@
         "service_worker": "background.js"
     },
     "action": {
-        "default_title": "Copy Tab URL"
+        "default_title": "Copy Tab URL",
+        "default_popup": "popup.html"
     },
     "commands": {
         "copy-tab-url": {
