@@ -1,4 +1,4 @@
-# Browser Copy URL
+# Copy Tab URL Browser Extension
 
 A ridiculously simple browser extension to copy the URL of the current (or selected) tabs using a keyboard shortcut.
 
