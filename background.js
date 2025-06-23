@@ -62,7 +62,7 @@ async function copyUrl(options) {
         chrome.notifications.create({
             type: 'basic',
             title: 'Copy Tab URL',
-            message: `Copied ${tabs.length} url(s) to clipboard`,
+            message: `Copied ${tabs.length} URL(s) to clipboard`,
             iconUrl: 'assets/icon48.png'
         })
     } else {
@@ -70,7 +70,7 @@ async function copyUrl(options) {
         chrome.notifications.create({
             type: 'basic',
             title: 'Copy Tab URL',
-            message: "Failed to copy tab urls",
+            message: "Failed to copy tab URLs",
             iconUrl: 'assets/icon48.png'
         })
     }
