@@ -59,9 +59,20 @@ async function copyUrl(options) {
 
     const response = await chrome.runtime.sendMessage({ action: 'copy', target: 'offscreen-doc', text: urls })
     if (response.success) {
-        console.log("Copied to clipboard!")
+        chrome.notifications.create({
+            type: 'basic',
+            title: 'Copy Tab URL',
+            message: `Copied ${tabs.length} url(s) to clipboard`,
+            iconUrl: 'assets/icon48.png'
+        })
     } else {
         console.error("Clipboard copy failed", response.error)
+        chrome.notifications.create({
+            type: 'basic',
+            title: 'Copy Tab URL',
+            message: "Failed to copy tab urls",
+            iconUrl: 'assets/icon48.png'
+        })
     }
 }
 
