@@ -11,6 +11,10 @@ Press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> to copy the url of the curren
 > - <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd> to copy links in markdown format
 > - The keybind can be configured through your browser's extension settings.
 
+## Privacy
+
+This extension does not collect, store, or transmit any personal data. It runs entirely locally in your browser.
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
